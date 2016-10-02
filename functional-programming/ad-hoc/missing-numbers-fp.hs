@@ -1,5 +1,5 @@
-import Data.List
-import Control.Monad
+import Data.List (group, sort, (\\))
+import Control.Monad (liftM)
 
 diff :: [String] -> [String] -> [String]
 diff xs ys =

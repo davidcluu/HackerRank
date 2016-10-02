@@ -1,5 +1,3 @@
-import Data.List
-
 divisors :: Int -> [Int]
 divisors 1 = [1]
 divisors n = 1 : n : filter ((== 0) . rem n) [2..n `div` 2]

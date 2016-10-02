@@ -1,5 +1,5 @@
-import Data.List
-import Data.Ord
+import Data.List (maximumBy, group)
+import Data.Ord (comparing)
 
 decToBin :: Int -> [Int]
 decToBin =

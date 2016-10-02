@@ -1,6 +1,6 @@
 import Data.Map (Map)
-import qualified Data.Map as Map
-import Control.Monad
+import qualified Data.Map as Map (fromList, lookup)
+import Control.Monad (replicateM, liftM, mapM_)
 
 main :: IO ()
 main = do

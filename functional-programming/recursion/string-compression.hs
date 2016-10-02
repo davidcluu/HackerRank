@@ -1,4 +1,4 @@
-import Data.List
+import Data.List (group)
 
 compress :: String -> String
 compress w = concatMap stringify . group $ w
@@ -11,5 +11,5 @@ compress w = concatMap stringify . group $ w
         1 -> [c]
         n -> c : show n
 
-main :: IO()
+main :: IO ()
 main = getLine >>= putStrLn . compress

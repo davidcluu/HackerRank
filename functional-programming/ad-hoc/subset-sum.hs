@@ -2,10 +2,10 @@
   Incomplete, > half of the tests time out
 -}
 
-import Data.List
-import Data.Ord
-import Control.Monad
-import Control.Arrow
+import Data.List (sort, minimumBy)
+import Data.Ord (comparing)
+import Control.Monad (liftM, replicateM, mapM_)
+import Control.Arrow ((&&&))
 
 reverseSublists :: [a] -> [[a]]
 reverseSublists = map concat . scanl (\b a -> [a] : b) [] . reverse
